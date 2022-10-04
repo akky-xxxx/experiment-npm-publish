@@ -3,6 +3,14 @@
   "version": "0.0.1",
   "main": "out/index.js",
   "author": "akky-xxxx <114.s.aki@gmail.com>",
+  "scripts": {
+    "build": "run-s build:remove type-check build:compile",
+    "build:compile": "tsc -p tsconfig.build.json",
+    "build:remove": "run-p build:remove-*",
+    "build:remove-out": "shx rm -rf out",
+    "build:remove-tsbuildinfo": "shx rm -rf *.tsbuildinfo",
+    "type-check": "tsc"
+  },
   "license": "MIT",
   "dependencies": {
     "remeda": "^1.1.0"
