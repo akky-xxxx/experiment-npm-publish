@@ -1,6 +1,6 @@
 {
   "name": "experiment-npm-publish",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "out/index.js",
   "author": "akky-xxxx <114.s.aki@gmail.com>",
   "scripts": {
